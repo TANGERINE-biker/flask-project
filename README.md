@@ -106,7 +106,6 @@ Response example:
 Request example:
 ```json
 {
-  "user_id": "number",
   "reaction": "string"
 }
 ```
