@@ -72,7 +72,7 @@ def get_user(user_id):
 
 @app.get("/users/<int:user_id>/posts")
 def sort_posts_by_reactions(user_id):
-    if user_id < 0 or user_id >= len(POSTS):
+    if user_id < 0 or user_id >= len(USERS):
         return Response(status=HTTPStatus.NOT_FOUND)
     data = request.get_json()
     param = data["sort"]
